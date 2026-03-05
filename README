@@ -1,0 +1,83 @@
+SISTEMA CLÍNICO VIDASPLUS
+Gestión de pacientes en urgencias
+
+Autor: Leider Rodríguez
+Lenguaje: Java
+Estructuras utilizadas: Cola, Pila y Árbol Binario de Búsqueda (BST)
+
+-------------------------------------
+
+DESCRIPCIÓN
+
+Este sistema simula la gestión de pacientes en el área de urgencias
+de la clínica VidasPlus en Yopal.
+
+Se implementaron tres módulos principales:
+
+1. Cola de pacientes (FIFO)
+
+Permite gestionar el turno de atención en urgencias.
+
+Operaciones implementadas:
+
+- enqueue()
+- dequeue()
+- peek()
+- mostrarCola()
+
+2. Historial clínico (Pila LIFO)
+
+Cada paciente posee una pila de diagnósticos donde el más reciente
+se consulta primero.
+
+Operaciones implementadas:
+
+- push()
+- pop()
+- peek()
+- mostrarHistorial()
+
+3. Árbol BST de médicos
+
+Permite organizar los médicos por código para facilitar búsquedas.
+
+Operaciones implementadas:
+
+- insertar()
+- buscar()
+- eliminar()
+- inOrden()
+- preOrden()
+- postOrden()
+- altura()
+
+-------------------------------------
+
+INSTRUCCIONES DE EJECUCIÓN
+
+1. Abrir terminal en la carpeta src
+
+2. Compilar
+
+javac *.java
+
+3. Ejecutar
+
+java SistemaClinico
+
+-------------------------------------
+
+ANÁLISIS DE COMPLEJIDAD
+
+Cola
+enqueue() → O(1)
+dequeue() → O(1)
+
+Pila
+push() → O(1)
+pop() → O(1)
+
+BST
+insertar() → O(log n) promedio
+buscar() → O(log n) promedio
+peor caso → O(n) si el árbol se degenera
